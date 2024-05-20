@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="stylec.css">
+</head>
+<body>
+    <h1>Conversor de Unidades</h1>
+    <div class="converter">
+        <input type="number" id="valor" placeholder="Ingresa un valor">
+        <select id="unidadOrigen">
+            <option value="centimetros">Centimetros</option>
+            <option value="metros">Metros</option>
+            <option value="kilometros">Kilómetros</option>
+            <option value="gramos">Gramos</option>
+            <option value="libras">Libras</option>
+            <option value="kilos">Kilos</option>
+            <option value="celsius">Grados Celsius</option>
+            <option value="fahrenheit">Grados Fahrenheit</option>
+        </select>
+        <select id="unidadDestino">
+            <option value="centimetros">Centimetros</option>
+            <option value="metros">Metros</option>
+            <option value="kilometros">Kilómetros</option>
+            <option value="gramos">Gramos</option>
+            <option value="libras">Libras</option>
+            <option value="kilos">Kilos</option>
+            <option value="celsius">Grados Celsius</option>
+            <option value="fahrenheit">Grados Fahrenheit</option>
+        </select>
+        <button onclick="convertir()">Convertir</button>
+        <p id="resultado">Resultado: </p>
+        <script src="scriptc.js"></script>
+    </div>
+</body>
+</html>
