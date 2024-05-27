@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor</title>
+    <title>Conversor de Unidades</title>
     <link rel="stylesheet" href="stylec.css">
     <link rel="icon" href="icono.png" type="image/x-icon">
 </head>
@@ -11,25 +11,27 @@
     <h1>Conversor de Unidades</h1>
     <div class="converter">
         <input type="number" id="valor" placeholder="Ingresa un valor">
-        <select id="unidadOrigen">
-            <option value="centimetros">Centimetros</option>
+        <select id="unidadOrigen" onchange="actualizarUnidadesDestino()">
+            <option value="milimetros">Milímetros</option>
+            <option value="centimetros">Centímetros</option>
             <option value="metros">Metros</option>
             <option value="kilometros">Kilómetros</option>
-            <option value="gramos">Gramos</option>
-            <option value="libras">Libras</option>
-            <option value="kilos">Kilos</option>
-            <option value="celsius">Grados Celsius</option>
-            <option value="fahrenheit">Grados Fahrenheit</option>
+            <option value="pulgadas">Pulgadas</option>
+            <option value="pies">Pies</option>
+            <option value="yardas">Yardas</option>
+            <option value="millas">Millas</option>
+            <option value="varas">Varas</option>
         </select>
         <select id="unidadDestino">
-            <option value="centimetros">Centimetros</option>
+            <option value="milimetros">Milímetros</option>
+            <option value="centimetros">Centímetros</option>
             <option value="metros">Metros</option>
             <option value="kilometros">Kilómetros</option>
-            <option value="gramos">Gramos</option>
-            <option value="libras">Libras</option>
-            <option value="kilos">Kilos</option>
-            <option value="celsius">Grados Celsius</option>
-            <option value="fahrenheit">Grados Fahrenheit</option>
+            <option value="pulgadas">Pulgadas</option>
+            <option value="pies">Pies</option>
+            <option value="yardas">Yardas</option>
+            <option value="millas">Millas</option>
+            <option value="varas">Varas</option>
         </select>
         <button onclick="convertir()">Convertir</button>
         <p id="resultado">Resultado: </p>
